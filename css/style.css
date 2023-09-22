@@ -1,0 +1,98 @@
+/* tipografica */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;900&display=swap');
+
+/* selector universal */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* selector de etiqueta */
+h1 {
+    font-family: 'Roboto', monospace;
+}
+
+/* selector por id  */
+#word_one {
+    font-size: 30px;
+    color: purple;
+    font-weight: 900;
+    text-transform: uppercase;
+
+}
+
+#list_options {
+    border: 1px solid red;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* selector por clase */
+.word_group {
+    background-color: gray;
+    color: #fff;
+    margin: 10px;
+}
+
+/* selector por atributo [*/
+[disabled] {
+    background-color: aqua;
+}
+
+/* seudoclases */
+.word_group:hover {
+    background-color: yellow;
+    padding: 5px;
+}
+
+#title_box {
+
+    color: blueviolet;
+    font-family: 'Roboto', sans-serif;
+    background-color: aquamarine;
+    /*margin-bottom: 10px;*/
+    /*margin: 0 0 10px 0;*/
+    margin: 10px 5px;
+    text-align: right;
+    text-transform: lowercase;
+    letter-spacing: 10px;
+    word-spacing: 25px;
+    /*padding: 20px;*/
+    padding: 0 20px 0 0;
+    border: 5px double #000;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px rgb(255, 127, 176)
+}
+
+#box_father {
+    background-color: black;
+    width: 50px;
+    height: 200px;
+    background-image: url(https://i.pinimg.com/222x/44/b1/a3/44b1a3180c39364591590557b73faeaf.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/*apllicando media queris al sitio */
+@media(min-width: 800px) and (max-width:1200px) {
+    body {
+        background-color: red;
+    }
+
+    h1 {
+        text-align: right;
+    }
+
+    a {
+        color: #fff;
+        font-size: 50px;
+        padding: 20px;
+    }
+}
+body{
+@media(max-width: 799px) {
+    background-image: url(https://i.pinimg.com/222x/44/b1/a3/44b1a3180c39364591590557b73faeaf.jpg);
+    background-position: center;
+    background-size: cover;
+}
+}
